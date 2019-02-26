@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Agents</h1>
+<%= link_to "Refresh", agents_path, :remote => true %>
+<div id="user-agent-partial">
+  <%= render partial: 'agent_table', locals: {agents: @agents}  %>
+</div>
